@@ -63,7 +63,7 @@ namespace BusquedadnoInformadas
                     if (!estadosVisitados.Contains(hijo))
                     {
                         // Crear nuevo Nodo.
-                        Nodo nHijo = new(hijo);
+                        Nodo nHijo = new Nodo(hijo);
                         nHijo.SetPadre(nodoActual);
                         estadosPorVisitar.Push(nHijo);
                     }
@@ -94,6 +94,7 @@ namespace BusquedadnoInformadas
             // Llamar a la búsqueda por anchura o por profundidad según sea necesario
              a.BusquedaPorAnchura();
             // a.BusquedaPorProfundidad();
+            Console.ReadKey();
         }
     }
 
